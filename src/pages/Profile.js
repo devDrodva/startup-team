@@ -21,7 +21,7 @@ const Profile = ({ match }) => {
   };
 
   function AddUser(existingUsers, newUser) {
-    let userAdded = existingUsers.find(item => item.id === newUser.id)
+    let userAdded = existingUsers.find(item => item.email === newUser.email)
 
   if(!userAdded) {
     setEmployees([...existingUsers, 
@@ -40,7 +40,7 @@ const Profile = ({ match }) => {
             <div className="profile_info">
                 <p className ="profile_name">{user.name}</p>
                 <p>{user.email}</p>
-                <p>{user.city}</p>
+                <p>{user.address.city}</p>
                 <Link to="/"> Back </Link>
                 <button onClick={() => AddUser(employees, user)}>Join us</button>
             </div>

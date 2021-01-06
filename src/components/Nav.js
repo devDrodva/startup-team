@@ -20,7 +20,7 @@ function Nav() {
             <button className="users-btn">Users</button>
             <div className="dropdown-content">
               {
-              employees.map((item) => <p key={item.id}>{item.name}</p>)
+              employees.map((item, idx) => <p key={idx}>{item.name}</p>)
               }
             </div>
           </div>
