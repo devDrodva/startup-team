@@ -29,6 +29,7 @@ ul {
 .title {
   text-align: center;
   margin: 40px 0px 10px 0px;
+  color: #484848;
 }
 
 .search-container {
@@ -85,7 +86,12 @@ ul {
   border-radius: 10px;
 }
 
+.cardList .user_info {
+  display: flex;;
+  flex-direction: column;
+}
 .cardList .user_info .userName {
+  color: #484848;
   font-weight: bolder;
 }
 .cardList .card .user_photo {
@@ -97,8 +103,14 @@ ul {
 }
 
 .card .user_info .viewprofile {
+  margin-top: 10px;
+  padding: 2px;
+  width: 100px;
+  text-align: center;
   text-decoration: none;
-  color:  #ff7f50;
+  background-color: #ff7f50;
+  border-radius: 3px;
+  color:  #fff;
 }
 
 /* PROFILE */

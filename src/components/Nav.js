@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../context/UserContext'
 import '../dropDown.css'
 
 function Nav() {
-  const { employees } = useContext(UserContext);
+  const { employees, setEmployees } = useContext(UserContext);
 
   return (
     <nav className="navbar">
@@ -20,7 +20,7 @@ function Nav() {
             <button className="users-btn">Users</button>
             <div className="dropdown-content">
               {
-              employees.map((item, idx) => <p key={idx}>{item.name}</p>)
+              employees.map(item => <p key={item.email}  onClick={() => removeItem(item.email)}>{item.name}</p>)
               }
             </div>
           </div>
@@ -29,6 +29,13 @@ function Nav() {
       </div>
     </nav>
   );
+
+  function removeItem(idxDeleted) {
+    let selectedEmployees = employees;
+    let i = employees.findIndex(employee => employee.email === idxDeleted)
+    selectedEmployees.splice(i, 1)
+    setEmployees([...selectedEmployees])
+  };
 };
 
 export default Nav;
