@@ -36,13 +36,13 @@ const Profile = ({ match }) => {
   return(
       <div id="profile-page" className="profile-page">
           {user && <div className="profile">
-            <img className="profile_photo" alt={user.name} src={'https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png'}/>
+            <img className="profile_photo" alt={user.name} src={'https://www.techedia.co.uk/Images/uprof.jpg'}/>
             <div className="profile_info">
-                <p className ="profile_name">{user.name}</p>
+                <Link to="/" className="link-back"><p className ="profile_name">{user.name}</p></Link>
                 <p>{user.email}</p>
                 <p>{user.address.city}</p>
-                <Link to="/"> Back </Link>
-                <button onClick={() => AddUser(employees, user)}>Join us</button>
+                <button className="btn-join" onClick={() => AddUser(employees, user)}>Join us</button>
+                
             </div>
           </div>}
       </div>              
@@ -50,3 +50,4 @@ const Profile = ({ match }) => {
 };
 
 export default Profile;
+

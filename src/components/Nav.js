@@ -17,7 +17,7 @@ function Nav() {
       
         {employees.length ?
           <div className="dropdown">
-            <button className="users-btn">Users</button>
+            <button className="users-btn">Team</button>
             <div className="dropdown-content">
               {
               employees.map(item => <p key={item.email}  onClick={() => removeItem(item.email)}>{item.name}</p>)
