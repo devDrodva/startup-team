@@ -51,7 +51,7 @@ function Nav() {
     selectedEmployees.splice(i, 1)
     setEmployees([...selectedEmployees])
 
-    if(employees.length == 0)  {
+    if(employees.length === 0)  {
       setModal(false);
     }
   }

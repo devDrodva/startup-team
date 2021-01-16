@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { Link } from 'react-router-dom'
 import Wrapper from '../../components/Wrapper/index'
 import { UserContext } from '../../components/Context/index'
 import { StyledProfile, CardProfile, ProfileInfo, ProfilePhoto, ButtonJoin } from './styles'
