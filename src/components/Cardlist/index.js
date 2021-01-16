@@ -1,14 +1,15 @@
 import React from 'react'
-import Card from './Card';
+import Card from '../Card/index';
+import StyledCardList from './styles'
 
 const CardList = ({ team }) => {
   
   return (
-    <ul className="cardList">
+    <StyledCardList>
       {
        team.map((user, idx) => <Card key={idx} user={user}/>)
       }
-    </ul>
+    </StyledCardList>
   );
 };
 

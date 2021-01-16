@@ -1,21 +1,42 @@
-Configurar router
-Crear componentes
-Hacer fetch
-Mostrar los datos
+### Project Stack
+- React
+- React Router DOM
+- Styled Components
 
-----
+### Project | Folder Structure 
+```
+- src
+- - - - components
+      |- Card
+      |- - index.js
+      |- - styles.js
+      |- Cardlist
+      |- - index.js
+      |- - styles.js
+      |- Context
+      |- - index.js
+      |- Navbar
+      |- - index.js
+      |- - styles.js
+      |- Wrapper
+      |- - index.js
+      |- - styles.js
+```
+```
+- - - - pages
+      |- Home
+      |- - index.js
+      |- - styles.js
+      |- Contact
+      |- - index.js
+      |- - styles.js
+```
 
-Agregar en Profile un boton para seleccionar usuario
-Crear en la barra de navegacion un contador con los usuarios seleccionados
-Crear un dropdown para mostrar usuarios seleccionados
-Añadir a cada elemento del dropdown boton para eliminar usuario
+### Start Project
+____
+### How to run
+Install dependencies: `npm install`
 
-// 6 horas
-// Evitar elementos duplicados del mismo elemento
-// // -> Solo el correo es unico
+Run project: `npm start`
 
-// 2 dias
-// Crear barra de busqueda que permita ingresar nombre o [ correo ] de la persona y filtrarlo ***
-
--- Extra
-    Localstorage para almacenar usuarios seleccionados
+Access URL: `http://localhost:3000`
